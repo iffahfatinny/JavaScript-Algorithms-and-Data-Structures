@@ -18,8 +18,8 @@ const makeServerRequest = new Promise((resolve, reject) => {
     } else {  
       reject("Data not received");
     }
+  });
   
-    makeServerRequest.then(result => {
-      console.log(result);
-    });
+  makeServerRequest.then(result => {
+    console.log(result);
   });
