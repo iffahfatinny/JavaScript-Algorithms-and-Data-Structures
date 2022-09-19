@@ -4,7 +4,9 @@
     Finish writing the getArrayOfUsers function so that it returns an array containing all the properties in the object it receives as an argument.
 */
 
-let users = {
+
+
+  let users = {
     Alan: {
       age: 27,
       online: false
@@ -25,11 +27,7 @@ let users = {
   
   function getArrayOfUsers(obj) {
     // Only change code below this line
-    let array = [];
-    for(let obj in users){
-      array.push(obj);
-    }
-    return array;
+   return Object.keys(obj)
     // Only change code above this line
   }
   
